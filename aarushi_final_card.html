@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Aarushi ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;800&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#000;color:#fff;overflow-x:hidden}
+.page{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;transition:all 0.8s ease}
+#page1{background:radial-gradient(circle, #2a0a0a 0%, #000 70%);z-index:10}
+.glitch{font-size:4.5rem;font-weight:800;letter-spacing:4px;color:#ff0a30;text-shadow:0 0 10px #ff0a30,0 0 30px #ff0a30;animation:glitch 0.3s infinite}
+@keyframes glitch{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
+.btn-danger{margin-top:35px;padding:14px 40px;background:transparent;border:2px solid #ff0a30;color:#ff0a30;font-weight:800;letter-spacing:2px;border-radius:5px;cursor:pointer;box-shadow:0 0 20px rgba(255,10,48,0.4)}
+.btn-danger:hover{background:#ff0a30;color:white}
+#page2{background:#0a050a;z-index:9;opacity:0;pointer-events:none;min-height:100vh;height:auto;position:relative;overflow:hidden}
+#page2.active{opacity:1;pointer-events:all}
+#page2::before{content:'';position:fixed;inset:0;background:radial-gradient(600px at 0% 0%, rgba(255,77,109,0.15), transparent),radial-gradient(600px at 100% 100%, rgba(255,184,106,0.12), transparent);pointer-events:none;z-index:0}
+.hearts-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.h{position:absolute;animation:floatH 8s linear infinite;opacity:0.15}
+@keyframes floatH{0%{transform:translateY(110vh) rotate(0deg) scale(0.8);opacity:0}10%{opacity:0.18}90%{opacity:0.18}100%{transform:translateY(-10vh) rotate(30deg) scale(1.3);opacity:0}}
+.card-wrap{position:relative;z-index:2;max-width:480px;width:95%;margin:20px auto;background:linear-gradient(145deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03));backdrop-filter:blur(25px);border:1px solid rgba(255,90,122,0.25);border-radius:32px;padding:30px 25px 25px;box-shadow:0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)}
+.card-wrap::before{content:'❤️';position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:#0a050a;border:1px solid rgba(255,90,122,0.3);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 0 20px rgba(255,90,122,0.4)}
+h1.love{font-family:'Great Vibes',cursive;font-size:3.8rem;line-height:1;background:linear-gradient(90deg,#ff5a7a,#ffb86a);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cake-area{position:relative;margin:25px 0}
+.cake{font-size:6.5rem;filter:drop-shadow(0 0 25px #ff9a9e)}
+.candles{position:absolute;top:5px;left:50%;transform:translateX(-50%);display:flex;gap:10px}
+.candle{width:7px;height:30px;background:linear-gradient(#fff,#ffcc6a);border-radius:4px;position:relative}
+.flame{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:12px;height:18px;background:radial-gradient(#fff 0%, #ffeb3b 30%, #ff5722 70%);border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;animation:flicker 0.2s infinite;box-shadow:0 0 12px #ffeb3b}
+.flame.off{opacity:0;transform:translateX(-50%) scale(0);transition:0.5s}
+@keyframes flicker{0%{transform:translateX(-50%) scaleY(1)}50%{transform:translateX(-51%) scaleY(1.1)}100%{transform:translateX(-50%) scaleY(0.95)}}
+.btn-love{padding:13px 34px;border-radius:50px;border:none;background:linear-gradient(90deg,#ff4d6d,#ff8a5c);color:white;font-weight:600;cursor:pointer;box-shadow:0 10px 30px rgba(255,77,109,0.5);margin-top:15px}
+.quotes-box{margin-top:25px;text-align:left;background:rgba(0,0,0,0.35);border-radius:20px;padding:15px;border:1px solid rgba(255,90,122,0.15);max-height:320px;overflow:hidden;position:relative}
+.quotes-track{animation:scrollQ 45s linear infinite}
+@keyframes scrollQ{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
+.q{padding:10px 5px;font-family:'Noto Sans Devanagari','Poppins',sans-serif;font-size:0.95rem;line-height:1.6;border-bottom:1px dashed rgba(255,90,122,0.15);display:flex;gap:10px}
+.q b{color:#ff8aa0;min-width:22px}
+#final{position:fixed;inset:0;background:rgba(0,0,0,0.96);z-index:100;display:none;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px}
+</style>
+</head>
+<body>
+<div class="page" id="page1">
+<div class="glitch">WARNING ⚠️</div>
+<p style="margin-top:10px;font-weight:600;letter-spacing:2px;">BIRTHDAY PROTOCOL INITIATED</p>
+<p style="margin-top:8px;opacity:0.7;letter-spacing:3px;font-size:0.9rem;">TARGET: AARUSHI // 12:00 AM</p>
+<button class="btn-danger" onclick="goPage2()">CLICK TO DECRYPT →</button>
+</div>
+<div class="page" id="page2">
+<div class="hearts-bg" id="heartsBg"></div>
+<div class="card-wrap">
+<h1 class="love">Happy Birthday<br>Aarushi ❤️</h1>
+<p style="letter-spacing:3px;opacity:0.5;font-size:0.75rem;margin-top:8px;">FROM YOUR FAVOURITE PERSON</p>
+<div class="cake-area" onclick="blow()">
+<div class="candles" id="candles">
+<div class="candle"><div class="flame"></div></div>
+<div class="candle"><div class="flame"></div></div>
+<div class="candle"><div class="flame"></div></div>
+<div class="candle"><div class="flame"></div></div>
+<div class="candle"><div class="flame"></div></div>
+</div>
+<div class="cake">🎂</div>
+<p style="font-size:0.7rem;opacity:0.4;margin-top:4px;">cake pe tap karke candles bujha de</p>
+</div>
+<div id="afterBlow" style="display:none;">
+<p style="font-size:0.95rem;line-height:1.8;opacity:0.9;margin-top:10px;">Meri <b style="color:#ff7a9a">Aarushi</b>, aaj ka din sirf tera hai, par har din mera hai kyuki tu meri hai ❤️</p>
+<button class="btn-love" onclick="wish()">Make a wish, meri jaan ✨</button>
+<div class="quotes-box">
+<div class="quotes-track" id="track">
+<div class="q"><b>❤️</b> तुम मेरी सुबह की पहली सोच हो</div>
+<div class="q"><b>💖</b> तुम्हारी हँसी मेरी favourite आवाज़ है</div>
+<div class="q"><b>🌙</b> तुमसे बात करके दिन अच्छा हो जाता है</div>
+<div class="q"><b>✨</b> तुम मेरी हर दुआ का जवाब हो</div>
+<div class="q"><b>💕</b> तुम्हारे बिना सब अधूरा सा लगता है</div>
+<div class="q"><b>🥰</b> तुम पास होती हो तो सब सही लगता है</div>
+<div class="q"><b>💌</b> तुम्हारा नाम ही मेरे दिल को सुकून देता है</div>
+<div class="q"><b>🌹</b> तुम मेरी जिंदगी का सबसे खूबसूरत हिस्सा हो</div>
+<div class="q"><b>😍</b> तुम्हारी आँखों में मेरा पूरा जहान है</div>
+<div class="q"><b>🤗</b> तुम्हें हँसाना मेरा favourite काम है</div>
+<div class="q"><b>💑</b> हम दोनों की कहानी मेरी favourite है</div>
+<div class="q"><b>♾️</b> तुम्हारा साथ, बस यही चाहिए हमेशा</div>
+<div class="q"><b>❤️</b> तुम मेरी आज हो, कल हो, हमेशा हो</div>
+<div class="q"><b>💖</b> जन्मदिन मुबारक हो मेरी जान</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="final">
+<h2 style="font-family:'Great Vibes',cursive;font-size:4rem;color:#ff8aa0;">Your wish is my promise</h2>
+<p style="margin-top:15px;font-size:1.1rem;opacity:0.8">I love you Aarushi, forever ❤️</p>
+<p style="margin-top:8px;font-family:'Noto Sans Devanagari';opacity:0.7">जन्मदिन मुबारक हो मेरी जान</p>
+</div>
+<script>
+function goPage2(){document.getElementById('page1').style.transform='scale(1.3)';document.getElementById('page1').style.opacity='0';setTimeout(()=>{document.getElementById('page1').style.display='none';let p=document.getElementById('page2');p.classList.add('active');document.body.style.overflow='auto';document.body.style.height='auto';},500);}
+const bg=document.getElementById('heartsBg');
+for(let i=0;i<35;i++){let h=document.createElement('div');h.className='h';h.textContent=['❤️','💖','💕','💗','💓','♥️'][Math.floor(Math.random()*6)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(10+Math.random()*22)+'px';h.style.animationDelay=Math.random()*8+'s';h.style.animationDuration=(6+Math.random()*6)+'s';bg.appendChild(h);}
+let blown=false;
+function blow(){if(blown)return;blown=true;document.querySelectorAll('.flame').forEach(f=>f.classList.add('off'));document.getElementById('afterBlow').style.display='block';}
+function wish(){document.getElementById('final').style.display='flex';for(let i=0;i<180;i++){let c=document.createElement('div');c.style.position='fixed';c.style.top='-10px';c.style.left=Math.random()*100+'vw';c.style.width='8px';c.style.height='12px';c.style.background=`hsl(${340+Math.random()*25},100%,70%)`;c.style.zIndex=999;c.style.borderRadius='50%';document.body.appendChild(c);c.animate([{transform:'translateY(0)'},{transform:`translateY(${innerHeight+200}px) rotate(720deg)`}],{duration:2500+Math.random()*2000}).onfinish=()=>c.remove();}}
+</script>
+</body>
+</html>
